@@ -1,31 +1,7 @@
-/*
-=====================================================================
-*   Ceevee v1.0 Layout Stylesheet
-*   url: styleshout.com
-*   03-18-2014
-=====================================================================
-
-   TOC:
-   a. General Styles
-   b. Header Styles
-   c. About Section
-   d. Resume Section
-   e. Portfolio Section
-   f. Call To Action Section
-   g. Testimonials Section
-   h. Contact Section
-   i. Footer
-
-===================================================================== */
-
-/* ------------------------------------------------------------------ */
-/* a. General Styles
-/* ------------------------------------------------------------------ */
-
 body { background: #0f0f0f; }
 
 /* ------------------------------------------------------------------ */
-/* b. Header Styles
+/* Header Styles
 /* ------------------------------------------------------------------ */
 
 header {
@@ -33,7 +9,7 @@ header {
    height: 800px;
    min-height: 500px;
    width: 100%;
-   background: #161415 url(../images/header-background.jpg) no-repeat top center;
+   background: white url(../images/background-img.svg) no-repeat top center;
    background-size: cover !important;
 	-webkit-background-size: cover !important;
    text-align: center;
@@ -52,34 +28,34 @@ header .banner {
    vertical-align: middle;
    margin: 0 auto;
    width: 85%;
-   padding-bottom: 30px;s
+   padding-bottom: 30px;
    text-align: center;
 }
 
 header .banner-text { width: 100%; }
 header .banner-text h1 {
    font: 90px/1.1em 'opensans-bold', sans-serif;
-   color: #fff;
+   color: #484949;
    letter-spacing: -2px;
    margin: 0 auto 18px auto;
    text-shadow: 0px 1px 3px rgba(0, 0, 0, .8);
 }
 header .banner-text h3 {
    font: 18px/1.9em 'librebaskerville-regular', serif;
-   color: #A8A8A8;
+   color: #484949;
    margin: 0 auto;
    width: 70%;
-   text-shadow: 0px 1px 2px rgba(0, 0, 0, .5);
+   text-shadow: 0px 0px 0px rgba(0, 0, 0, .5);
 }
 header .banner-text h3 span,
 header .banner-text h3 a {
-   color: #fff;
+   color: #11ABB0;
 }
 header .banner-text hr {
    width: 60%;
    margin: 18px auto 24px auto;
    border-color: #2F2D2E;
-   border-color: rgba(150, 150, 150, .1);
+   /*border-color: rgba(150, 150, 150, .1);*/
 }
 
 /* header social links */
@@ -94,8 +70,8 @@ header .social li {
    margin: 0 15px;
    padding: 0;
 }
-header .social li a { color: #fff; }
-header .social li a:hover { color: #11ABB0; }
+header .social li a { color: #484949; }
+header .social li a:hover { color: #fff; }
 
 /* scrolldown link */
 header .scrolldown a {
@@ -103,13 +79,12 @@ header .scrolldown a {
    bottom: 30px;
    left: 50%;
    margin-left: -29px;
-   color: #fff;
+   color: #11ABB0;
    display: block;
    height: 42px;
    width: 42px;
    font-size: 42px;
    line-height: 42px;
-   color: #fff;
    border-radius: 100%;
 
    -webkit-transition: all .3s ease-in-out;
@@ -117,7 +92,7 @@ header .scrolldown a {
    -o-transition: all .3s ease-in-out;
    transition: all .3s ease-in-out;
 }
-header .scrolldown a:hover { color: #11ABB0; }
+header .scrolldown a:hover { color: #484949; }
 
 /* primary navigation
 --------------------------------------------------------------------- */
@@ -134,6 +109,7 @@ header .scrolldown a:hover { color: #11ABB0; }
    width: 100%;
    text-transform: uppercase;
    letter-spacing: 2.5px;
+   box-shadow: 2px 2px 1.0rem rgba(0, 0, 0, 0.2);
    margin: 0 auto;
    z-index: 100;
    position: fixed;
@@ -169,7 +145,7 @@ ul#nav li a {
    line-height: 32px;
 	text-decoration: none;
    text-align: left;
-   color: #fff;
+   color: #484949;
 
 	-webkit-transition: color .2s ease-in-out;
 	-moz-transition: color .2s ease-in-out;
@@ -177,9 +153,9 @@ ul#nav li a {
 	-ms-transition: color .2s ease-in-out;
 	transition: color .2s ease-in-out;
 }
-
+.opaque ul#nav li a {color: white;}
 ul#nav li a:active { background-color: transparent !important; }
-ul#nav li.current a { color: #F06000; }
+ul#nav li.current a { color: #11ABB0; }
 
 
 /* ------------------------------------------------------------------ */
@@ -187,7 +163,7 @@ ul#nav li.current a { color: #F06000; }
 /* ------------------------------------------------------------------ */
 
 #about {
-   background: #2B2B2B;
+   background: #f0f0f0;
    padding-top: 96px;
    padding-bottom: 66px;
    overflow: hidden;
@@ -198,7 +174,7 @@ ul#nav li.current a { color: #F06000; }
 
 #about h2 {
    font: 22px/30px 'opensans-bold', sans-serif;
-   color: #fff;
+   color: #444;
    margin-bottom: 12px;
 }
 #about p {
@@ -207,9 +183,10 @@ ul#nav li.current a { color: #F06000; }
 }
 #about .profile-pic {
    position: relative;
-   width: 120px;
-   height: 120px;
-   border-radius: 100%;
+   /*width: 120px;*/
+   /*height: 120px;*/
+   /*border-radius: 100%;*/
+   border: 2px solid #11ABB0;
 }
 #about .contact-details { width: 41.66667%; }
 #about .download {
@@ -260,7 +237,7 @@ ul#nav li.current a { color: #F06000; }
 
 #resume .header-col { padding-top: 9px; }
 #resume .main-col { padding-right: 10%; }
-
+#resume ul {list-style-type: circle;}
 .education, .work {
    margin-bottom: 48px;
    padding-bottom: 24px;
@@ -291,9 +268,9 @@ ul#nav li.current a { color: #F06000; }
 	padding: 0;
 	text-align: left;
 }
-.bars .skills {
+#resume .bars .skills {
   	margin-top: 36px;
-   list-style: none;
+   list-style-type: none;
 }
 .bars li {
    position: relative;
@@ -325,85 +302,111 @@ ul#nav li.current a { color: #F06000; }
    border-radius: 3px 0 0 3px;
 }
 
-.photoshop {
-  	width: 60%;
-  	-moz-animation: photoshop 2s ease;
-  	-webkit-animation: photoshop 2s ease;
-}
 .illustrator {
   	width: 55%;
   	-moz-animation: illustrator 2s ease;
   	-webkit-animation: illustrator 2s ease;
 }
-.wordpress {
-  	width: 50%;
-  	-moz-animation: wordpress 2s ease;
-  	-webkit-animation: wordpress 2s ease;
+.html5 {
+    width: 95%;
+    -moz-animation: html5 2s ease;
+    -webkit-animation: html5 2s ease;
 }
 .css {
-  	width: 90%;
+  	width: 95%;
   	-moz-animation: css 2s ease;
   	-webkit-animation: css 2s ease;
 }
-.html5 {
-  	width: 80%;
-  	-moz-animation: html5 2s ease;
-  	-webkit-animation: html5 2s ease;
-}
 .jquery {
-  	width: 50%;
+  	width: 80%;
   	-moz-animation: jquery 2s ease;
   	-webkit-animation: jquery 2s ease;
 }
-
-@-moz-keyframes photoshop {
-  0%   { width: 0px;  }
-  100% { width: 60%;  }
+.php {
+    width: 55%;
+    -moz-animation: php 2s ease;
+    -webkit-animation: php 2s ease;
 }
+.mvc {
+    width: 55%;
+    -moz-animation: mvc 2s ease;
+    -webkit-animation: mvc 2s ease;
+}
+.csharp {
+    width: 33%;
+    -moz-animation: csharp 2s ease;
+    -webkit-animation: csharp 2s ease;
+}
+.java {
+    width: 60%;
+    -moz-animation: java 2s ease;
+    -webkit-animation: java 2s ease;
+}
+
 @-moz-keyframes illustrator {
   0%   { width: 0px;  }
   100% { width: 55%;  }
 }
-@-moz-keyframes wordpress {
-  0%   { width: 0px;  }
-  100% { width: 50%;  }
+@-moz-keyframes html5 {
+    0%   { width: 0px;  }
+    100% { width: 95%;  }
 }
 @-moz-keyframes css {
   0%   { width: 0px;  }
-  100% { width: 90%;  }
-}
-@-moz-keyframes html5 {
-  0%   { width: 0px;  }
-  100% { width: 80%;  }
+  100% { width: 95%;  }
 }
 @-moz-keyframes jquery {
   0%   { width: 0px;  }
-  100% { width: 50%;  }
-}
-
-@-webkit-keyframes photoshop {
-  0%   { width: 0px;  }
-  100% { width: 60%;  }
-}
-@-webkit-keyframes illustrator {
-  0%   { width: 0px;  }
-  100% { width: 55%;  }
-}
-@-webkit-keyframes wordpress {
-  0%   { width: 0px;  }
-  100% { width: 50%;  }
-}
-@-webkit-keyframes css {
-  0%   { width: 0px;  }
-  100% { width: 90%;  }
-}
-@-webkit-keyframes html5 {
-  0%   { width: 0px;  }
   100% { width: 80%;  }
 }
+@-moz-keyframes php {
+    0%   { width: 0px;  }
+    100% { width: 55%;  }
+}
+@-moz-keyframes mvc {
+    0%   { width: 0px;  }
+    100% { width: 55%;  }
+}
+@-moz-keyframes csharp {
+    0%   { width: 0px;  }
+    100% { width: 33%;  }
+}
+@-moz-keyframes java {
+    0%   { width: 0px;  }
+    100% { width: 60%;  }
+}
+
+@-webkit-keyframes illustrator {
+    0%   { width: 0px;  }
+    100% { width: 55%;  }
+}
+@-webkit-keyframes html5 {
+    0%   { width: 0px;  }
+    100% { width: 95%;  }
+}
+@-webkit-keyframes css {
+    0%   { width: 0px;  }
+    100% { width: 95%;  }
+}
 @-webkit-keyframes jquery {
-  0%   { width: 0px;  }
-  100% { width: 50%;  }
+    0%   { width: 0px;  }
+    100% { width: 80%;  }
+}
+@-webkit-keyframes php {
+    0%   { width: 0px;  }
+    100% { width: 55%;  }
+}
+@-webkit-keyframes mvc {
+    0%   { width: 0px;  }
+    100% { width: 55%;  }
+}
+@-webkit-keyframes csharp {
+    0%   { width: 0px;  }
+    100% { width: 33%;  }
+}
+@-webkit-keyframes java {
+    0%   { width: 0px;  }
+    100% { width: 60%;  }
 }
 
 /* ------------------------------------------------------------------ */
@@ -426,10 +429,12 @@ ul#nav li.current a { color: #F06000; }
 
 /* Portfolio Content */
 #portfolio-wrapper .columns { margin-bottom: 36px; }
+#portfolio-wrapper {display: flex; justify-content: center; flex-flow: row wrap;}
 .portfolio-item .item-wrap {
    background: #fff;
    overflow: hidden;
    position: relative;
+   max-width: 225px;
 
    -webkit-transition: all 0.3s ease-in-out;
 	-moz-transition: all 0.3s ease-in-out;
@@ -487,6 +492,12 @@ ul#nav li.current a { color: #F06000; }
 }
 .portfolio-item .item-wrap img {
    vertical-align: bottom;
+}
+.portfolio-item .item-wrap.thinkspark img {
+    padding: 3rem;
+    margin: 0 auto;
+    display: block;
+    max-width: 95%;
 }
 .portfolio-item .portfolio-item-meta { padding: 18px }
 .portfolio-item .portfolio-item-meta h5 {
