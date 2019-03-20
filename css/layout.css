@@ -499,6 +499,12 @@ ul#nav li.current a { color: #11ABB0; }
     display: block;
     max-width: 95%;
 }
+.portfolio-item .item-wrap.redackt img {
+    padding: 3rem 2.5rem;
+    margin: 0 auto;
+    display: block;
+    max-width: 95%;
+}
 .portfolio-item .portfolio-item-meta { padding: 18px }
 .portfolio-item .portfolio-item-meta h5 {
    font: 14px/21px 'opensans-bold', sans-serif;
